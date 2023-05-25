@@ -29,8 +29,8 @@ class Program
 
             if (userInput == "1")
             {
-                Console.WriteLine("Enter animal name:");
-                string? name = Console.ReadLine();
+                // Console.WriteLine("Enter animal name:");
+                // string? name = Console.ReadLine();
 
                 Console.WriteLine("Enter animal age:");
                 int age = Convert.ToInt32(Console.ReadLine());
@@ -112,7 +112,7 @@ class Program
                 break;
             }
 
-            Console.Write("¿Quieres crear otro alimento o comida? (S/N)");
+            Console.Write("¿Quieres crear otro animal o comida? (S/N)");
             string? answer = Console.ReadLine();
             if (answer.ToLower() != "s")
             {
@@ -163,7 +163,7 @@ class Program
         else
         {
             a.Feed(f);
-            Console.WriteLine("Animal has been fed.");
+            Console.WriteLine("Animal has been feed.");
         }
 
         Console.Write("¿Quieres alimentar otro animal? (S/N)");

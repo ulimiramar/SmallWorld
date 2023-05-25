@@ -2,19 +2,19 @@ namespace AnimalsProyect
 {
     internal class AnimalFood : IFood
     {
-        private static int lastId = 0;
-        private int id;
+        private IdFood Id;
         private int Calories;
         private string Name;
 
         public AnimalFood(int calories, string name)
         {
-            this.id = ++lastId;
+            this.Id = new IdFood();
             Calories = calories;
             Name = name;
         }
-        public int GetId(){
-            return id;
+        public int GetId()
+        {
+            return Id.GetId();
         }
         public int GetCalories()
         {
@@ -23,6 +23,10 @@ namespace AnimalsProyect
         public string GetName()
         {
             return Name;
+        }
+        public override string ToString()
+        {
+            return $"ID:{GetId()}, Calories:{Calories}, Name:{Name}";
         }
     }
 }

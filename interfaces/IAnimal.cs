@@ -10,9 +10,5 @@ namespace AnimalsProyect
         bool Move();
         bool Feed(IFood food);
         bool Sleep();
-        public string ToString()
-        {
-            return $"ID: {id}, Name: {name} Species: {species}, Age: {age}, Weight: {weight}, Diet: {dietType}, Energy: {energy}";
-        }
     }
 }
