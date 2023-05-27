@@ -6,16 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        // TerrestrialAnimal animal = new TerrestrialAnimal("Lobo", 150, 10, new CarnivoreDiet());
-        // if (animal.Feed(new VegetableFood(50, "Tomate")))
-        // {
-        //     Console.WriteLine("Rico");
-        // }
-        // else
-        // {
-        //     Console.WriteLine("no como eso");
-        // }
-
 
         List<IAnimal> animalList = new List<IAnimal>();
         List<IFood> foodList = new List<IFood>();
@@ -29,8 +19,6 @@ class Program
 
             if (userInput == "1")
             {
-                // Console.WriteLine("Enter animal name:");
-                // string? name = Console.ReadLine();
 
                 Console.WriteLine("Enter animal age:");
                 int age = Convert.ToInt32(Console.ReadLine());
