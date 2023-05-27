@@ -1,6 +1,6 @@
 namespace AnimalsProyect
 {
-    internal class AcuaticAnimal : IAnimal, Ipositionable
+    internal class AquaticAnimal : IAnimal, Ipositionable
     {
         private IdAnimal Id;
         private string Specie { get; set; }
@@ -12,7 +12,7 @@ namespace AnimalsProyect
         private int energy;
         private int maxEnergy;
 
-        public AcuaticAnimal(string specie, double weight, int age, IDiet diet)
+        public AquaticAnimal(string specie, double weight, int age, IDiet diet)
         {
             this.Id = new IdAnimal();
             Specie = specie;

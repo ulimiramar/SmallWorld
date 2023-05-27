@@ -1,6 +1,6 @@
 namespace AnimalsProyect
 {
-    internal class HervivorousDiet : IDiet
+    internal class HerbivorousDiet : IDiet
     {
         public bool CanEat(IFood food)
         {
