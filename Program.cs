@@ -18,11 +18,35 @@ class Program
 
             if (userInput == "1")
             {
-                AnimalFactory.CreateAnimal(animalList);
+                Console.WriteLine("Enter animal age:");
+                int age = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter animal weight:");
+                double weight = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter animal species:");
+                string? species = Console.ReadLine();
+
+                Console.WriteLine("Enter animal diet type (1. carnivore, 2. herbivore, or 3. omnivore):");
+                int diet = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter animal habitat type (1. terrestrial, 2. aquatic, or 3. aeroterrestrial):");
+                int habitat = Convert.ToInt32(Console.ReadLine());
+
+                AnimalController.CreateAnimal(animalList, age, weight, species, diet, habitat);
             }
             else if (userInput == "2")
             {
-                FoodFactory.CreateFood(foodList);
+                Console.WriteLine("Enter food name:");
+                string? name = Console.ReadLine();
+
+                Console.WriteLine("Enter food calories:");
+                int calories = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter food diet type (1. vegetable or 2. animal):");
+                int dietType = Convert.ToInt32(Console.ReadLine());
+
+                FoodController.CreateFood(foodList,name,calories,dietType);
             }
             else
             {
