@@ -84,26 +84,8 @@ class Program
             Console.WriteLine("Enter food id:");
             int foodId = Convert.ToInt32(Console.ReadLine());
 
-            IAnimal animal = animalList.Find(a => a.GetId() == id);
-            IFood food = foodList.Find(f => f.GetId() == foodId);
+            FeedAnimalController.FeedAnimal(animalList, foodList, id, foodId);
 
-            if (animal == null)
-            {
-                Console.WriteLine("Animal not found.");
-            }
-            else if (food == null)
-            {
-                Console.WriteLine("Food not found.");
-            }
-            else if (!animal.GetDiet().CanEat(food))
-            {
-                Console.WriteLine("Animal cannot eat this type of food.");
-            }
-            else
-            {
-                animal.Feed(food);
-                Console.WriteLine("Animal has been fed.");
-            }
 
             Console.Write("Do you want to feed another animal? (Y/N)");
             string? answer = Console.ReadLine();

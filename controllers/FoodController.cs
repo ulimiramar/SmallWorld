@@ -15,6 +15,8 @@ namespace AnimalsProyect
 
             foodList.Add(newFood);
 
+
+            // esto es lo que hacía antes y lo que reemplacé por el diccionario
             // IFood newFood;
             // switch (dietType)
             // {

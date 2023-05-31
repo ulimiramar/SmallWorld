@@ -24,7 +24,6 @@ namespace AnimalsProyect
             this.maxEnergy = 100;
         }
 
-        public AeroTerrestrialAnimal(){}
         
         public int GetId()
         {

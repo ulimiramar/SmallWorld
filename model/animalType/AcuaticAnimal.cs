@@ -22,7 +22,6 @@ namespace AnimalsProyect
             this.energy = 100;
             this.maxEnergy = 100;
         }
-        public AquaticAnimal(){}
 
         public int GetId()
         {

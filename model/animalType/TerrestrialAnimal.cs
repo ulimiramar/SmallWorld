@@ -24,8 +24,6 @@ namespace AnimalsProyect
             this.maxEnergy = 100;
         }
 
-        public TerrestrialAnimal(){}
-
         public int GetId()
         {
             return Id.GetId();
